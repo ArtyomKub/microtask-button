@@ -24,6 +24,14 @@ function App() {
     //     console.log(name)
     // }
 
+    const Button1Foo = (subscriber:string, age: number) => {
+        console.log(subscriber, age)
+    }
+
+    const Button2Foo = (subscriber:string) => {
+        console.log(subscriber)
+    }
+
     return (
         <div className="App">
             {/*<button onClick={(event)=>{onClickHandler('IVAN')}}>My YouTube Chanel - 1</button>*/}
@@ -31,8 +39,8 @@ function App() {
             {/*<button onClick={(event)=>{console.log('Hello')}}>First</button>*/}
             {/*<button onClick={foo1}>1</button>*/}
             {/*<button onClick={(event)=>{foo2(100200)}}>2</button>*/}
-            <Button name={'My YouTube Chanel - 1'}/>
-            <Button name={'My YouTube Chanel - 2'}/>
+            <Button name={'My YouTube Chanel - 1'} callback={()=>Button1Foo('IVAN', 21)}/>
+            <Button name={'My YouTube Chanel - 2'} callback={()=>Button2Foo('ALLA')}/>
 
         </div>
     );
