@@ -11,16 +11,20 @@ function App() {
     //     console.log('ALLA')
     // }
 
-    const onClickHandler = (name: string) => {
-        console.log(name)
-    }
+    // const onClickHandler = (name: string) => {
+    //     console.log(name)
+    // }
 
 
     return (
         <div className="App">
             {/*<button onClick={(event)=>{console.log('Hello')}}>First</button>*/}
-            <button onClick={()=>{onClickHandler('IVAN')}}>My YouTube Chanel - 1</button>
-            <button onClick={()=>{onClickHandler('ALLA')}}>My YouTube Chanel - 2</button>
+            {/*<button onClick={(event)=>{onClickHandler('IVAN')}}>My YouTube Chanel - 1</button>*/}
+            {/*<button onClick={(event)=>{onClickHandler('ALLA')}}>My YouTube Chanel - 2</button>*/}
+
+            <button>1</button>
+            <button>2</button>
+
         </div>
     );
 }
